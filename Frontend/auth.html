@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Assignment Tracker</h2>
+
+    <div class="form-toggle">
+      <button onclick="toggleForm('login')">Login</button>
+      <button onclick="toggleForm('register')">Register</button>
+    </div>
+
+    <form id="loginForm">
+      <h3>Login</h3>
+      <input type="email" placeholder="Email" id="loginEmail" required />
+      <input type="password" placeholder="Password" id="loginPassword" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="registerForm" style="display: none;">
+      <h3>Register</h3>
+      <input type="text" placeholder="Name" id="registerName" required />
+      <input type="email" placeholder="Email" id="registerEmail" required />
+      <input type="password" placeholder="Password" id="registerPassword" required />
+      <select id="registerRole">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

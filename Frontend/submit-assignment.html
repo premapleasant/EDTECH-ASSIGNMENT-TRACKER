@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Submit Assignment</h2>
+
+    <form id="submitForm">
+      <select id="assignmentSelect" required>
+        <option value="">-- Select Assignment --</option>
+      </select>
+      <textarea id="content" placeholder="Enter your submission or link..." rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="submit-assignment.js"></script>
+</body>
+</html>

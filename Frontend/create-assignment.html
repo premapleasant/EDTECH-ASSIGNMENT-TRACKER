@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Create Assignment</h2>
+
+    <form id="assignmentForm">
+      <input type="text" id="title" placeholder="Assignment Title" required />
+      <textarea id="description" placeholder="Assignment Description" rows="4" required></textarea>
+      <input type="date" id="dueDate" required />
+      <button type="submit">Create</button>    
+      <button type="button" onclick="window.location.href='view-submissions.html'">View Submissions</button>
+    </form>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="create-assignment.js"></script>
+</body>
+</html>

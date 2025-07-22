@@ -1,0 +1,35 @@
+body {
+  font-family: Arial;
+  background: #f0f0f0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  width: 300px;
+}
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+}
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #0f70d1;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>View Submissions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>View Submissions</h2>
+
+    <select id="assignmentSelect" required>
+      <option value="">-- Select Assignment --</option>
+    </select>
+
+    <table id="submissionsTable" style="margin-top: 20px; width: 100%;">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Submission</th>
+          <th>Submitted At</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="view-submissions.js"></script>
+</body>
+</html>
